@@ -41,7 +41,6 @@ class GameViewController: UIViewController, StoryboardInstantiable {
             }
             
             viewModel.showWinner = { [weak self] player in
-//                self?.winnerLabel.text = "\(player.nickname) wins!"
                 self?.showWinner(player)
             }
         }
