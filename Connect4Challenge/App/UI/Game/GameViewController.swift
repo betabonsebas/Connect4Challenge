@@ -34,13 +34,15 @@ class GameViewController: UIViewController, StoryboardInstantiable {
         didSet {
             loadViewIfNeeded()
             
-            viewModel.updateUI = { [weak self] player in
+            viewModel.updateUI = { [weak self] (player, count) in
                 self?.collectionView.reloadData()
                 self?.setupCurrentPlayer(player)
+                self?.setupCount(count)
             }
             
             viewModel.showWinner = { [weak self] player in
-                self?.winnerLabel.text = "\(player.nickname) wins!"
+//                self?.winnerLabel.text = "\(player.nickname) wins!"
+                self?.showWinner(player)
             }
         }
     }
@@ -60,6 +62,11 @@ class GameViewController: UIViewController, StoryboardInstantiable {
         playerTwoLabel.textColor = viewModel.playerTwo.color
     }
     
+    private func setupCount(_ count: (one: Int, two: Int)) {
+        playerOneChips.text = "\(count.one)"
+        playerTwoChips.text = "\(count.two)"
+    }
+    
     private func setupCurrentPlayer(_ player: Player) {
         playerTurnLabel.text = "Turn for: \(player.nickname)"
     }
@@ -68,6 +75,15 @@ class GameViewController: UIViewController, StoryboardInstantiable {
         collectionView.dataSource = self
         let chipNib = UINib(nibName: String(describing: ChipCollectionViewCell.self), bundle: nil)
         collectionView.register(chipNib, forCellWithReuseIdentifier: String(describing: ChipCollectionViewCell.self))
+    }
+    
+    private func showWinner(_ winner: Player) {
+        let alert = UIAlertController(title: "Winner", message: "\(winner.nickname) wins!", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default) { _ in
+            self.navigationController?.popToRootViewController(animated: true)
+        }
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: nil)
     }
     
     @IBAction func addChipToRowAction(_ sender: UIButton) {
@@ -111,5 +127,12 @@ extension GameViewController: UICollectionViewDataSource {
         let chip = viewModel.chips[indexPath.item]
         cell.configure(with: chip)
         return cell
+    }
+}
+
+extension GameViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let sideSize = (view.frame.width / 7) - 10
+        return CGSize(width: sideSize, height: sideSize)
     }
 }

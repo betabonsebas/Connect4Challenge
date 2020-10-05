@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="109" id="UU0-dw-uTW" customClass="GameTableViewCell" customModule="ConnectFour" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="109" id="UU0-dw-uTW" customClass="GameTableViewCell" customModule="Connect4Challenge" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UU0-dw-uTW" id="VBC-C1-rCv">
@@ -62,6 +62,13 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="oeQ-z9-hWd"/>
+            <connections>
+                <outlet property="chips1Label" destination="e2t-IC-sVP" id="o2U-kY-y6e"/>
+                <outlet property="chips2Label" destination="Ugt-VJ-RDk" id="1vU-M0-JfT"/>
+                <outlet property="player1Label" destination="2nY-g8-KpP" id="9ZI-lf-5hc"/>
+                <outlet property="player2Label" destination="amF-BC-cM9" id="Ira-nz-wbw"/>
+                <outlet property="winnerLabel" destination="PUh-PU-ZGI" id="CmS-wr-z6W"/>
+            </connections>
             <point key="canvasLocation" x="132.80000000000001" y="167.76611694152925"/>
         </tableViewCell>
     </objects>

@@ -22,11 +22,11 @@ class GameViewModel {
     var playerOne: Player
     var playerTwo: Player
     
-//    let firebase: FirebaseController
+    let fetcher: FirebaseFetcher
     
-    var updateUI: ((_ player: Player) -> ())? {
+    var updateUI: ((_ player: Player, _ count: (one: Int, two: Int)) -> ())? {
         didSet {
-            updateUI?(playerInTurn())
+            updateUI?(playerInTurn(), (0, 0))
         }
     }
     
@@ -35,7 +35,7 @@ class GameViewModel {
     init(players: [Player]) {
         self.playerOne = players[0]
         self.playerTwo = players[1]
-//        firebase = FirebaseController()
+        fetcher = FirebaseFetcher()
         buildBoardArray()
     }
     
@@ -76,7 +76,7 @@ class GameViewModel {
         }
         isWinner(Chip(color: color, position: position))
         turn += 1
-        updateUI?(playerInTurn())
+        updateUI?(playerInTurn(), (playerOneCount, playerTwoCount))
     }
     
     private func playerInTurn() -> Player {
@@ -93,7 +93,7 @@ class GameViewModel {
         
         if foundInColumn(with: chip) || foundInRow(with: chip) || foundInFirstDiagonal(with: chip) || foundInSecondDiagonal(with: chip) {
             let winner = playerInTurn()
-//            firebase.saveGame(Game(playerOne: playerOne.nickname, playerTwo: playerTwo.nickname, playerOneChips: playerOneCount, playerTwoChips: playerTwoCount, winner: winner.nickname))
+            fetcher.saveGame(Game(playerOne: playerOne.nickname, playerTwo: playerTwo.nickname, playerOneChips: playerOneCount, playerTwoChips: playerTwoCount, winner: winner.nickname))
             showWinner?(winner)
             return
         } else {

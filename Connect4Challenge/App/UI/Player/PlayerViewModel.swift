@@ -8,7 +8,7 @@
 import UIKit
 
 class PlayerViewModel {
-//    private let firebase: FirebaseController
+    private let fetcher: FirebaseFetcher
     private var playerOne: Player?
     private var playerTwo: Player?
     var setPlayerErrorText: String
@@ -19,20 +19,20 @@ class PlayerViewModel {
     }
     
     init() {
-//        firebase = FirebaseController()
+        fetcher = FirebaseFetcher()
         self.setPlayerErrorText = "Please add your nickname"
     }
     
     func addPlayer(_ nickname: String) {
         if playerOne == nil {
             playerOne = Player(color: UIColor.blue, nickname: nickname)
-//            firebase.savePlayer(playerOne!)
+            fetcher.savePlayer(playerOne!)
             return
         }
         
         if playerTwo == nil {
             playerTwo = Player(color: UIColor.red, nickname: nickname)
-//            firebase.savePlayer(playerTwo!)
+            fetcher.savePlayer(playerTwo!)
             return
         }
     }
@@ -55,12 +55,4 @@ class PlayerViewModel {
         
         return ""
     }
-    
-//    func gameControllerWithPlayers() -> GameController? {
-//        guard let playerOne = self.playerOne, let playerTwo = self.playerTwo else {
-//            return nil
-//        }
-//        
-//        return GameController(playerOne: playerOne, playerTwo: playerTwo)
-//    }
 }

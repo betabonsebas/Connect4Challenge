@@ -9,11 +9,9 @@ import UIKit
 
 class HistoryCoordinator: Coordinator {
     private let presenter: UINavigationController
-    private let players: [Player]
     
-    init(presenter: UINavigationController = UINavigationController(), players: [Player]) {
+    init(presenter: UINavigationController = UINavigationController()) {
         self.presenter = presenter
-        self.players = players
     }
     
     func navigate() {

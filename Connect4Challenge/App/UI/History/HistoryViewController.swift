@@ -10,15 +10,15 @@ import UIKit
 class HistoryViewController: UIViewController, StoryboardInstantiable {
 
     @IBOutlet var tableview: UITableView!
-//    private var firebase: FirebaseController!
-//    private var games: [Game] = []
+    private var fetcher: FirebaseFetcher!
+    private var games: [Game] = []
     
     var coordinator: HistoryCoordinator!
     var viewModel: HistoryViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        firebase = FirebaseController()
+        fetcher = FirebaseFetcher()
         tableview.dataSource = self
         let nib = UINib(nibName: String(describing: GameTableViewCell.self), bundle: nil)
         tableview.register(nib, forCellReuseIdentifier: String(describing: GameTableViewCell.self))
@@ -26,24 +26,25 @@ class HistoryViewController: UIViewController, StoryboardInstantiable {
     }
     
     private func fillData() {
-//        firebase.getGames { [weak self] (games) in
-//            guard let gamesToShow = games else {
-//                return
-//            }
-//            self?.games = gamesToShow
-//            self?.tableview.reloadData()
-//        }
+        fetcher.getGames { [weak self] (games) in
+            guard let gamesToShow = games else {
+                return
+            }
+            self?.games = gamesToShow
+            self?.tableview.reloadData()
+        }
     }
 }
 
 extension HistoryViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return games.count
-        return 0
+        return games.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableview.dequeueReusableCell(withIdentifier: String(describing: GameTableViewCell.self)) as! GameTableViewCell
+        let game = games[indexPath.row]
+        cell.configure(with: game)
         return cell
     }
     

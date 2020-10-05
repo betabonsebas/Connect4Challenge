@@ -10,7 +10,7 @@
         <!--Game View Controller-->
         <scene sceneID="4ZR-ga-KNl">
             <objects>
-                <viewController id="cml-th-j1c" customClass="GameViewController" customModule="ConnectFour" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cml-th-j1c" customClass="GameViewController" customModule="Connect4Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cbh-ns-Ho6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,7 +139,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="360" id="GJH-3T-lPh"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="15l-PN-2lC">
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="15l-PN-2lC">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -155,6 +155,9 @@
                                         </view>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="delegate" destination="cml-th-j1c" id="LMB-uI-Nk1"/>
+                                </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player XXX Wins!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQx-Fe-833">
                                 <rect key="frame" x="16" y="587.5" width="382" height="54"/>

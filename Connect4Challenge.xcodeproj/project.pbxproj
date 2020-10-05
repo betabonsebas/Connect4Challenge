@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0421362DCD59F15D684BD439 /* Pods_Connect4Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D428CD71F24D51D43D58B17C /* Pods_Connect4Challenge.framework */; };
+		268DC6003140FD94F5E44AA6 /* Pods_Connect4Challenge_Connect4ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62BC4A857E98C06BBBB72AD5 /* Pods_Connect4Challenge_Connect4ChallengeUITests.framework */; };
 		2FBC1079252956B20041B788 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBC1078252956B20041B788 /* AppDelegate.swift */; };
 		2FBC107B252956B20041B788 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBC107A252956B20041B788 /* SceneDelegate.swift */; };
 		2FBC1082252956B40041B788 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FBC1081252956B40041B788 /* Assets.xcassets */; };
@@ -33,6 +35,10 @@
 		2FBC1137252A94810041B788 /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBC1135252A94810041B788 /* GameTableViewCell.swift */; };
 		2FBC1138252A94810041B788 /* GameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FBC1136252A94810041B788 /* GameTableViewCell.xib */; };
 		2FBC113D252A94E80041B788 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBC113C252A94E80041B788 /* HistoryViewModel.swift */; };
+		2FBC1148252AC9BD0041B788 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FBC1147252AC9BD0041B788 /* GoogleService-Info.plist */; };
+		2FBC1177252AD0FC0041B788 /* FirebaseFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBC1176252AD0FC0041B788 /* FirebaseFetcher.swift */; };
+		2FBC117C252AD1170041B788 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBC117B252AD1170041B788 /* Game.swift */; };
+		5B794CBE7C63976416C3F3E5 /* Pods_Connect4ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29D79585F99B020DCF6DB61 /* Pods_Connect4ChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E4984724C4FC9D01E5E6BA1 /* Pods-Connect4Challenge-Connect4ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connect4Challenge-Connect4ChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-Connect4Challenge-Connect4ChallengeUITests/Pods-Connect4Challenge-Connect4ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2BA04E428CF4FC1DA6B4FF37 /* Pods-Connect4Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connect4Challenge.debug.xcconfig"; path = "Target Support Files/Pods-Connect4Challenge/Pods-Connect4Challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		2FBC1075252956B20041B788 /* Connect4Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Connect4Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FBC1078252956B20041B788 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FBC107A252956B20041B788 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +93,16 @@
 		2FBC1135252A94810041B788 /* GameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
 		2FBC1136252A94810041B788 /* GameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameTableViewCell.xib; sourceTree = "<group>"; };
 		2FBC113C252A94E80041B788 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		2FBC1147252AC9BD0041B788 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2FBC1176252AD0FC0041B788 /* FirebaseFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseFetcher.swift; sourceTree = "<group>"; };
+		2FBC117B252AD1170041B788 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		3295FAE6CD1EAA489536A9D5 /* Pods-Connect4Challenge-Connect4ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connect4Challenge-Connect4ChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-Connect4Challenge-Connect4ChallengeUITests/Pods-Connect4Challenge-Connect4ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		62BC4A857E98C06BBBB72AD5 /* Pods_Connect4Challenge_Connect4ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Connect4Challenge_Connect4ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D288AE6E8C6704A5D8B8AA9 /* Pods-Connect4ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connect4ChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-Connect4ChallengeTests/Pods-Connect4ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		8EAC2A6E829856C1CBF77BD2 /* Pods-Connect4Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connect4Challenge.release.xcconfig"; path = "Target Support Files/Pods-Connect4Challenge/Pods-Connect4Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		C70536215C8A8E21F3C9E8AD /* Pods-Connect4ChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connect4ChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-Connect4ChallengeTests/Pods-Connect4ChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D29D79585F99B020DCF6DB61 /* Pods_Connect4ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Connect4ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D428CD71F24D51D43D58B17C /* Pods_Connect4Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Connect4Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0421362DCD59F15D684BD439 /* Pods_Connect4Challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B794CBE7C63976416C3F3E5 /* Pods_Connect4ChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				268DC6003140FD94F5E44AA6 /* Pods_Connect4Challenge_Connect4ChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +140,8 @@
 				2FBC108E252956B40041B788 /* Connect4ChallengeTests */,
 				2FBC1099252956B40041B788 /* Connect4ChallengeUITests */,
 				2FBC1076252956B20041B788 /* Products */,
+				E34B701E758802F8785CD84F /* Pods */,
+				55041F51A29B092107D1A9BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +162,7 @@
 				2FBC1081252956B40041B788 /* Assets.xcassets */,
 				2FBC1083252956B40041B788 /* LaunchScreen.storyboard */,
 				2FBC1086252956B40041B788 /* Info.plist */,
+				2FBC1147252AC9BD0041B788 /* GoogleService-Info.plist */,
 			);
 			path = Connect4Challenge;
 			sourceTree = "<group>";
@@ -198,6 +222,7 @@
 		2FBC10C8252A802C0041B788 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2FBC1175252AD0D60041B788 /* Firebase */,
 				2FBC10C9252A80360041B788 /* Entity */,
 			);
 			path = Model;
@@ -208,6 +233,7 @@
 			children = (
 				2FBC10CA252A80440041B788 /* Player.swift */,
 				2FBC1101252A8B920041B788 /* Chip.swift */,
+				2FBC117B252AD1170041B788 /* Game.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -254,6 +280,37 @@
 			path = History;
 			sourceTree = "<group>";
 		};
+		2FBC1175252AD0D60041B788 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				2FBC1176252AD0FC0041B788 /* FirebaseFetcher.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		55041F51A29B092107D1A9BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D428CD71F24D51D43D58B17C /* Pods_Connect4Challenge.framework */,
+				62BC4A857E98C06BBBB72AD5 /* Pods_Connect4Challenge_Connect4ChallengeUITests.framework */,
+				D29D79585F99B020DCF6DB61 /* Pods_Connect4ChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E34B701E758802F8785CD84F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BA04E428CF4FC1DA6B4FF37 /* Pods-Connect4Challenge.debug.xcconfig */,
+				8EAC2A6E829856C1CBF77BD2 /* Pods-Connect4Challenge.release.xcconfig */,
+				0E4984724C4FC9D01E5E6BA1 /* Pods-Connect4Challenge-Connect4ChallengeUITests.debug.xcconfig */,
+				3295FAE6CD1EAA489536A9D5 /* Pods-Connect4Challenge-Connect4ChallengeUITests.release.xcconfig */,
+				C70536215C8A8E21F3C9E8AD /* Pods-Connect4ChallengeTests.debug.xcconfig */,
+				7D288AE6E8C6704A5D8B8AA9 /* Pods-Connect4ChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -261,9 +318,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FBC109F252956B40041B788 /* Build configuration list for PBXNativeTarget "Connect4Challenge" */;
 			buildPhases = (
+				A66B9FEF9076AB433C868D76 /* [CP] Check Pods Manifest.lock */,
 				2FBC1071252956B20041B788 /* Sources */,
 				2FBC1072252956B20041B788 /* Frameworks */,
 				2FBC1073252956B20041B788 /* Resources */,
+				A74E34403113E8ADA973E18B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -278,6 +337,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FBC10A2252956B40041B788 /* Build configuration list for PBXNativeTarget "Connect4ChallengeTests" */;
 			buildPhases = (
+				69190ED1890F2E49662ED74A /* [CP] Check Pods Manifest.lock */,
 				2FBC1087252956B40041B788 /* Sources */,
 				2FBC1088252956B40041B788 /* Frameworks */,
 				2FBC1089252956B40041B788 /* Resources */,
@@ -296,9 +356,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FBC10A5252956B40041B788 /* Build configuration list for PBXNativeTarget "Connect4ChallengeUITests" */;
 			buildPhases = (
+				3C7929A8651DC52E008EE4B7 /* [CP] Check Pods Manifest.lock */,
 				2FBC1092252956B40041B788 /* Sources */,
 				2FBC1093252956B40041B788 /* Frameworks */,
 				2FBC1094252956B40041B788 /* Resources */,
+				7D41E3C3D7314727F07998B8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -358,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FBC10F3252A88400041B788 /* Game.storyboard in Resources */,
+				2FBC1148252AC9BD0041B788 /* GoogleService-Info.plist in Resources */,
 				2FBC1085252956B40041B788 /* LaunchScreen.storyboard in Resources */,
 				2FBC10AE252A7F480041B788 /* Player.storyboard in Resources */,
 				2FBC1082252956B40041B788 /* Assets.xcassets in Resources */,
@@ -383,6 +446,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3C7929A8651DC52E008EE4B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Connect4Challenge-Connect4ChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69190ED1890F2E49662ED74A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Connect4ChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D41E3C3D7314727F07998B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Connect4Challenge-Connect4ChallengeUITests/Pods-Connect4Challenge-Connect4ChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Connect4Challenge-Connect4ChallengeUITests/Pods-Connect4Challenge-Connect4ChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Connect4Challenge-Connect4ChallengeUITests/Pods-Connect4Challenge-Connect4ChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A66B9FEF9076AB433C868D76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Connect4Challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A74E34403113E8ADA973E18B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Connect4Challenge/Pods-Connect4Challenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Connect4Challenge/Pods-Connect4Challenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Connect4Challenge/Pods-Connect4Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2FBC1071252956B20041B788 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -400,7 +566,9 @@
 				2FBC1079252956B20041B788 /* AppDelegate.swift in Sources */,
 				2FBC10CB252A80440041B788 /* Player.swift in Sources */,
 				2FBC107B252956B20041B788 /* SceneDelegate.swift in Sources */,
+				2FBC1177252AD0FC0041B788 /* FirebaseFetcher.swift in Sources */,
 				2FBC10FD252A8B540041B788 /* GameViewModel.swift in Sources */,
+				2FBC117C252AD1170041B788 /* Game.swift in Sources */,
 				2FBC10D3252A809B0041B788 /* PlayerCoordinator.swift in Sources */,
 				2FBC1116252A8D0D0041B788 /* GameCoordinator.swift in Sources */,
 				2FBC1131252A940B0041B788 /* HistoryCoordinator.swift in Sources */,
@@ -569,6 +737,7 @@
 		};
 		2FBC10A0252956B40041B788 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BA04E428CF4FC1DA6B4FF37 /* Pods-Connect4Challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -588,6 +757,7 @@
 		};
 		2FBC10A1252956B40041B788 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EAC2A6E829856C1CBF77BD2 /* Pods-Connect4Challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -607,6 +777,7 @@
 		};
 		2FBC10A3252956B40041B788 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C70536215C8A8E21F3C9E8AD /* Pods-Connect4ChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -629,6 +800,7 @@
 		};
 		2FBC10A4252956B40041B788 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D288AE6E8C6704A5D8B8AA9 /* Pods-Connect4ChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -651,6 +823,7 @@
 		};
 		2FBC10A6252956B40041B788 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E4984724C4FC9D01E5E6BA1 /* Pods-Connect4Challenge-Connect4ChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -671,6 +844,7 @@
 		};
 		2FBC10A7252956B40041B788 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3295FAE6CD1EAA489536A9D5 /* Pods-Connect4Challenge-Connect4ChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="mD9-5c-pD0" customClass="ChipCollectionViewCell" customModule="ConnectFour" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="mD9-5c-pD0" customClass="ChipCollectionViewCell" customModule="Connect4Challenge" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -18,17 +18,15 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qm-4O-BHx">
                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="50" id="6C9-Ch-tCZ"/>
-                            <constraint firstAttribute="height" constant="50" id="uWQ-Db-u4v"/>
-                        </constraints>
                     </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="EsU-El-UY5"/>
             <constraints>
-                <constraint firstItem="7qm-4O-BHx" firstAttribute="centerY" secondItem="mD9-5c-pD0" secondAttribute="centerY" id="3Ha-Fv-HHu"/>
-                <constraint firstItem="7qm-4O-BHx" firstAttribute="centerX" secondItem="mD9-5c-pD0" secondAttribute="centerX" id="S5u-9b-0Ur"/>
+                <constraint firstItem="7qm-4O-BHx" firstAttribute="leading" secondItem="mD9-5c-pD0" secondAttribute="leading" id="6dE-b2-LMe"/>
+                <constraint firstAttribute="trailing" secondItem="7qm-4O-BHx" secondAttribute="trailing" id="Ccn-4D-gwP"/>
+                <constraint firstAttribute="bottom" secondItem="7qm-4O-BHx" secondAttribute="bottom" id="jql-xn-Wyg"/>
+                <constraint firstItem="7qm-4O-BHx" firstAttribute="top" secondItem="mD9-5c-pD0" secondAttribute="top" id="lud-6P-160"/>
             </constraints>
             <connections>
                 <outlet property="colorView" destination="7qm-4O-BHx" id="Rg5-t7-fVL"/>

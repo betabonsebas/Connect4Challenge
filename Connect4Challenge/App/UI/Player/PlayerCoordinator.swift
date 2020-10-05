@@ -30,4 +30,9 @@ class PlayerCoordinator: Coordinator {
         let coordinator = GameCoordinator(presenter: self.presenter, players: players)
         coordinator.navigate()
     }
+    
+    func navigateToHistory() {
+        let coordinator = HistoryCoordinator(presenter: self.presenter)
+        coordinator.navigate()
+    }
 }

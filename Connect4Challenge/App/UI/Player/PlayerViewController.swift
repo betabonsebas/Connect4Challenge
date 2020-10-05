@@ -19,11 +19,21 @@ class PlayerViewController: UIViewController, StoryboardInstantiable {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        configureHistoryButton()
     }
     
     func configureUI() {
         setupLabel.text = "Setup \(viewModel.playerToSet())"
         errorLabel.text = ""
+    }
+    
+    func configureHistoryButton() {
+        let historyButtonItem = UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self, action: #selector(historyAction))
+        navigationItem.setRightBarButton(historyButtonItem, animated: false)
+    }
+    
+    @objc func historyAction() {
+        coordinator.navigateToHistory()
     }
     
     @IBAction func continueAction(_ sender: Any) {

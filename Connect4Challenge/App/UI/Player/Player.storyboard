@@ -57,9 +57,7 @@
                             <constraint firstItem="3kI-JC-hem" firstAttribute="trailing" secondItem="als-Rq-ywD" secondAttribute="trailing" constant="16" id="kmn-Dt-91B"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Pwi-Gq-RCA">
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="bookmarks" id="Ptx-oY-V6u"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="Pwi-Gq-RCA"/>
                     <connections>
                         <outlet property="errorLabel" destination="als-Rq-ywD" id="EGm-nr-IDn"/>
                         <outlet property="nicknameTextfield" destination="LZm-ya-SGy" id="sid-0c-rbk"/>
